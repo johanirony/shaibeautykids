@@ -1,6 +1,6 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
-import hero from '@/assests/hero.png'
+import hero from '@/assests/hero.jpeg'
 import product1 from '@/assests/product-1.png'
 import product2 from '@/assests/product-2.png'
 import product3 from '@/assests/product-3.png'
@@ -46,7 +46,7 @@ export default function Home() {
        
         
       </div>
-      <div><Image src={hero} alt=""/></div>
+      <div className="flex justify-center "><Image src={hero} width={500} className="rounded-full" alt=""/></div>
       </div>
       <div>
 

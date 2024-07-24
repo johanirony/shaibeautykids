@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className="bg-[#F2E5D7] grid-cols-2 items-end w-full h-full grid md:grid-cols-5"> {/* Responsive grid */}
  
       <div className='py-5 px-8 flex justify-center'>
-        <Image src={logo} alt='' className='w-[100px]  md:w-[100px]  lg:w-[150px]' />
+        <Image src={logo} alt='' className='w-[100px]  md:w-[100px]  lg:w-[100px]' />
       </div>
       <div className='py-5 md:hidden px-5'> {/* Menu icon for smaller screens */}
         <Menu 
