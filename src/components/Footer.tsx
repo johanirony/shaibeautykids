@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="col-span-2 bg-[#402C2A] flex-col">
             <div className=" md:grid md:divide-y-0 md:grid-cols-4 md:divide-x-2 md:divide-white p-10 text-white md:px-5 justify-center divide-y-2 divide-white"><div className="py-5 lg:px-5 md:px-5">
                 <h1 className='text-3xl'>Products</h1>
-                {products.map(({title})=>(<ul className='text-sm font-medium space-y-5 pt-3 '>
+                {products.map(({title})=>(<ul  key={title} className='text-sm font-medium space-y-5 pt-3 '>
                     <li className='hover:underline'><Link href='/'>{title}</Link></li>
                 </ul>))
                     
