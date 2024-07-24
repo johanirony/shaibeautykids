@@ -4,6 +4,7 @@ import hero from '@/assests/hero.png'
 import product1 from '@/assests/product-1.png'
 import product2 from '@/assests/product-2.png'
 import product3 from '@/assests/product-3.png'
+import product4 from '@/assests/product-4.png'
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -17,9 +18,9 @@ export default function Home() {
     },
     {
       id:2,
-      image:product3,
+      image:product2,
       text:"Product",
-      width:200
+      width:180
     },
     {
       id:3,
@@ -29,9 +30,9 @@ export default function Home() {
     },
     {
       id:4,
-      image:product3,
+      image:product4,
       text:"Product",
-      width:200
+      width:250
     },
   ]
   return (
