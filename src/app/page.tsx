@@ -11,22 +11,27 @@ export default function Home() {
     {
       id:1,
       image:product1,
-      text:"Product"
+      text:"Product",
+      width:150
+
     },
     {
       id:2,
-      image:product2,
-      text:"Product"
+      image:product3,
+      text:"Product",
+      width:200
     },
     {
       id:3,
       image:product3,
-      text:"Product"
+      text:"Product",
+      width:200
     },
     {
       id:4,
       image:product3,
-      text:"Product"
+      text:"Product",
+      width:200
     },
   ]
   return (
@@ -48,9 +53,9 @@ export default function Home() {
       <div className="px-8 pt-5">
         <h1 className="text-5xl font-semibold text-[#47312e]" >Kids <span className="text-[#1245d5]">P</span><span className="text-[#b44301]">r</span><span className="text-[#6c30c7]">o</span><span className="text-[#11704b]">d</span><span className="text-[#b44301]">u</span><span className="text-[#1245d5]">c</span><span className="text-[#6c30c7]">t</span><span className="text-[#11704b]">s</span></h1>
         <div className="flex flex-col md:grid md:grid-cols-4  ">
-          {products.map(({id,image,text})=>(
+          {products.map(({id,image,text,width})=>(
             <div key={id} className="pt-3 px-10 w-auto h-auto bg-[#EFE0CD] m-10 md:m-[50px] rounded-lg flex items-center  flex-col ">
-            <Image src={image} alt="" className="w-[200px] hover:scale-110"/>
+            <Image src={image} alt="" width={width} className=" hover:scale-110"/>
               <h1 className="font-normal">{text}</h1>
               <Button className="bg-[#28818C] rounded-full mx-20 my-3 hover:bg-transparent border-[#28818c] border-2 hover:text-[#28818c] text-lg">Shop Now</Button>
             
