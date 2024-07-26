@@ -9,17 +9,24 @@ import Link from 'next/link'
 export default function Footer() {
     const products = [
         {
-            title:"PRODUCT 1"
+            title:"Magical Mango Bathwash",
+    href:"/products/b575e543-1424-4c0d-8441-9959960d4bc6"
         },
         {
-            title:"PRODUCT 2"
+           title:"Velvety Vanilla Bodylotion",
+    href:"/products/7977ac98-08a6-40b4-8e08-6d92f3537c99"
         },
         {
-            title:"PRODUCT 3"
+          
+            title:"Superlicious Strawberry Shampoo",
+            href:"/products/b0d51a34-ffd7-4d22-ba93-a7eec24a0e60"
         },
         {
-            title:"PRODUCT 4"
+            
+            title:"Mosquito Repellent",
+            href:"/products/46ea4754-2232-49b4-94e3-7bb17e6567c8"
         },
+        
     ]
     
   return (
@@ -41,8 +48,8 @@ export default function Footer() {
         <div className="col-span-2 bg-[#402C2A] flex-col">
             <div className=" md:grid md:divide-y-0 md:grid-cols-4 md:divide-x-2 md:divide-white p-10 text-white md:px-5 justify-center divide-y-2 divide-white"><div className="py-5 lg:px-5 md:px-5">
                 <h1 className='text-3xl'>Products</h1>
-                {products.map(({title})=>(<ul  key={title} className='text-sm font-medium space-y-5 pt-3 '>
-                    <li className='hover:underline'><Link href='/'>{title}</Link></li>
+                {products.map(({title,href})=>(<ul  key={title} className='text-sm font-medium space-y-5 pt-3 '>
+                    <li className='hover:underline'><Link href={href}>{title}</Link></li>
                 </ul>))
                     
                 }

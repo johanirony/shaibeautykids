@@ -12,23 +12,23 @@ import { Button } from './ui/button';
 export default function Navbar() {
   const components = [{
     id:1,
-    title:"Product 1",
-    href:"/"
+    title:"Magical Mango Bathwash",
+    href:"/products/b575e543-1424-4c0d-8441-9959960d4bc6"
 },
 {
     id:2,
-    title:"Product 2",
-    href:"/"
+    title:"Velvety Vanilla Bodylotion",
+    href:"/products/7977ac98-08a6-40b4-8e08-6d92f3537c99"
 },
 {
     id:3,
-    title:"Product 3",
-    href:"/"
+    title:"Superlicious Strawberry Shampoo",
+    href:"/products/b0d51a34-ffd7-4d22-ba93-a7eec24a0e60"
 },
 {
     id:4,
-    title:"Product 4",
-    href:"/"
+    title:"Mosquito Repellent",
+    href:"/products/46ea4754-2232-49b4-94e3-7bb17e6567c8"
 },];
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
@@ -36,7 +36,8 @@ export default function Navbar() {
     <nav className="bg-[#F2E5D7] grid-cols-2 items-end w-full h-full grid md:grid-cols-5"> {/* Responsive grid */}
  
       <div className='py-5 px-8 flex justify-center'>
-        <Image src={logo} alt='' className='w-[100px]  md:w-[100px]  lg:w-[100px]' />
+        <Link href={"/"} ><Image src={logo} alt='' className='w-[100px]  md:w-[100px]  lg:w-[100px]' /></Link>
+        
       </div>
       <div className='py-5 md:hidden px-5'> {/* Menu icon for smaller screens */}
         <Menu 
