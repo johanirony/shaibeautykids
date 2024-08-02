@@ -23,6 +23,7 @@ export default function Layout({
       <body className={cn("bg-background min-h-screen font-sans antialiased", inter.variable)}>
         {/* <Navbar/> */}
         
+        
         {children}
         {/* <Footer/> */}
         </body>

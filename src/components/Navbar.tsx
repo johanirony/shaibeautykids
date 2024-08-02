@@ -33,7 +33,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   return (
-    <nav className="bg-[#F2E5D7] grid-cols-2 items-end w-full h-full grid md:grid-cols-5"> {/* Responsive grid */}
+    <nav className="bg-[#52DCEF] grid-cols-2 items-end w-full h-full grid md:grid-cols-5"> {/* Responsive grid */}
  
       <div className='py-5 px-8 flex justify-center'>
         <Link href={"/"} ><Image src={logo} alt='' className='w-[100px]  md:w-[100px]  lg:w-[100px]' /></Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
       <div className='py-5 md:hidden px-5'> {/* Menu icon for smaller screens */}
         <Menu 
-          className="text-xl text-[#553E3B]"
+          className="text-xl text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
         />
       </div>
@@ -53,12 +53,12 @@ export default function Navbar() {
         <NavigationMenu>
         <NavigationMenuList>
         <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-[#F2E5D7] text-sm md:text-xl lg:text-xl text-[#553E3B] hover:bg-[#FCF7F1]">PRODUCTS</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-[#52DCEF] text-sm md:text-xl lg:text-xl text-white hover:bg-[#3AC7C9]">PRODUCTS</NavigationMenuTrigger>
             <NavigationMenuContent>
-<ul className="grid w-[400px] gap-3 p-4 md:w-[300px] md:grid-cols-1 lg:w-[300px] bg-[#FCF7F1] rounded-none  ">
+<ul className="grid w-[400px] gap-3 p-4 md:w-[300px] md:grid-cols-1 lg:w-[300px] bg-[#52DCEF] rounded-none  ">
   {components.map((component) => (
     <ListItem
-    className='hover:bg-[#F2E5D7]'
+    className='hover:bg-[#3AC7C9] text-white'
       key={component.title}
       title={component.title}
       href={component.href}
@@ -70,10 +70,10 @@ export default function Navbar() {
 </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-[#F2E5D7] text-sm md:text-xl lg:text-xl text-[#553E3B] hover:bg-[#FCF7F1]">ABOUT US</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-[#52DCEF] text-sm md:text-xl lg:text-xl text-white hover:bg-[#FCF7F1]">ABOUT US</NavigationMenuTrigger>
         </NavigationMenuItem>
         <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-[#F2E5D7] text-sm md:text-xl lg:text-xl text-[#553E3B] hover:bg-[#FCF7F1]">BLOG </NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-[#52DCEF] text-sm md:text-xl lg:text-xl text-white hover:bg-[#FCF7F1]">BLOG </NavigationMenuTrigger>
         </NavigationMenuItem>
     </NavigationMenuList>
         </NavigationMenu>
@@ -82,8 +82,8 @@ export default function Navbar() {
 
       {/* Right side icons - adjust for responsiveness */}
       <div className='py-5 justify-end flex flex-row gap-5 px-10 md:col-span-2'> {/* Span two columns on medium screens */}
-        <span className='hidden md:flex flex-row text-[15px] text-[#553E3B] gap-2 pt-2 hover:text-[#607338] font-semibold'><Search /> SEARCH</span> {/* Hide search on small screens */}
-        <Button className='hidden md:flex  bg-[#607338] text-white text-sm gap-2 hover:bg-[#445327] rounded-none'><ShoppingCart />WHERE TO BUY</Button>
+        <span className='hidden md:flex flex-row text-[15px] text-white gap-2 pt-2 hover:text-[#9FBF5A] font-semibold'><Search /> SEARCH</span> {/* Hide search on small screens */}
+        <Button className='hidden md:flex  bg-[#9FBF5A] text-white text-sm gap-2 hover:bg-[#445327] rounded-none'><ShoppingCart />WHERE TO BUY</Button>
       </div> 
     </nav> 
   );

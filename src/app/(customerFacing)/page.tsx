@@ -27,12 +27,12 @@ const getNewestProducts=cache(()=> {
 export default function Home() {
   
   return (
-    <main className=" w-full h-full bg-[#FBF2E9]  ">
+    <main className=" w-full h-full bg-white ">
       <Navbar/>
       <div className='flex flex-col md:grid md:grid-cols-2 justify-center items-center pt-[100px] px-8'>
       <div className="w-full h-full bg-inherit">
-        <h1 className="text-5xl font-semibold text-[#47312E] ">Created Just <br></br> for <span className="text-[#6C30C7]">K</span><span className="text-[#B44301]">I</span><span className="text-[#11704B]">D</span><span className="text-[#1245D5]">S</span></h1>
-        <p className='text-2xl text-[#47312e] pt-3'>
+        <h1 className="text-5xl font-semibold text-black ">Created Just <br></br> for <span className="text-[#6C30C7]">K</span><span className="text-[#B44301]">I</span><span className="text-[#11704B]">D</span><span className="text-[#1245D5]">S</span></h1>
+        <p className='text-2xl text-black pt-3'>
         Introducing Shai Beauty Kids Created with a scientific understanding of developing kid skin and hair, with self care products that prepare them for their widening world. And as kids gain independence, they also gain confidence knowing they can take care of themselves
         </p>
        
@@ -44,7 +44,7 @@ export default function Home() {
 
       </div>
       <div className="px-8 pt-5">
-        <h1 className="text-5xl font-semibold text-[#47312e]" >Kids <span className="text-[#1245d5]">P</span><span className="text-[#b44301]">r</span><span className="text-[#6c30c7]">o</span><span className="text-[#11704b]">d</span><span className="text-[#b44301]">u</span><span className="text-[#1245d5]">c</span><span className="text-[#6c30c7]">t</span><span className="text-[#11704b]">s</span></h1>
+        <h1 className="text-5xl font-semibold text-black" >Kids <span className="text-[#1245d5]">P</span><span className="text-[#b44301]">r</span><span className="text-[#6c30c7]">o</span><span className="text-[#11704b]">d</span><span className="text-[#b44301]">u</span><span className="text-[#1245d5]">c</span><span className="text-[#6c30c7]">t</span><span className="text-[#11704b]">s</span></h1>
 
         <ProductGridSection productsFetcher={getMostPopularProducts} title="Most Popular"/>
         <ProductGridSection productsFetcher={getNewestProducts} title="Newest"/>
@@ -52,7 +52,7 @@ export default function Home() {
       
       </div>
       <div className="px-8 pt-5">
-        <h1 className="text-5xl font-semibold text-[#47312e]">Kids <span className="text-[#1245d5]">A</span><span className="text-[#b44301]">s</span><span className="text-[#6c30c7]">s</span><span className="text-[#11704b]">e</span><span className="text-[#b44301]">m</span><span className="text-[#1245d5]">b</span><span className="text-[#6c30c7]">l</span><span className="text-[#11704b]">e</span><span className="text-[#11704b]">{'!'}</span></h1>
+        <h1 className="text-5xl font-semibold text-black">Kids <span className="text-[#1245d5]">A</span><span className="text-[#b44301]">s</span><span className="text-[#6c30c7]">s</span><span className="text-[#11704b]">e</span><span className="text-[#b44301]">m</span><span className="text-[#1245d5]">b</span><span className="text-[#6c30c7]">l</span><span className="text-[#11704b]">e</span><span className="text-[#11704b]">{'!'}</span></h1>
       </div>
       <Footer/>
       
@@ -67,7 +67,7 @@ type ProductGridSectionProps={
 function ProductGridSection({productsFetcher,title}:ProductGridSectionProps){
   return(
     <div>
-       <h1 className="text-4xl font-semibold text-[#47312e] pt-5">{title}</h1>
+       <h1 className="text-4xl font-semibold text-black pt-5">{title}</h1>
        <div className="space-y-4">
    
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg gap-4 pt-5">
